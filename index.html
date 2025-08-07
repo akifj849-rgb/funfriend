@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FUNFRIEND - Video Chat</title>
+  <link rel="icon" href="/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top-bar">
+    <h1 class="logo">FUNFRIEND</h1>
+  </header>
+
+  <div class="status" id="status">Connecting...</div>
+
+  <div class="videos">
+    <div class="video-container glass">
+      <video id="localVideo" autoplay muted playsinline></video>
+      <span class="label">You</span>
+    </div>
+    <div class="video-container glass">
+      <video id="remoteVideo" autoplay playsinline></video>
+      <span class="label">Stranger</span>
+    </div>
+  </div>
+
+  <div class="controls">
+    <button id="muteBtn">🔇</button>
+    <button id="skipBtn">Next</button>
+    <button id="fullscreenBtn">⛶</button>
+  </div>
+
+  <div class="overlay loading" id="loadingOverlay">
+    <div class="spinner"></div>
+    <p>Finding a friend...</p>
+  </div>
+
+  <footer class="footer">
+    <p>© 2025 FUNFRIEND</p>
+  </footer>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

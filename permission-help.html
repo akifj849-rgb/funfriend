@@ -1,0 +1,77 @@
+<!-- public/permission-help.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Permission Help</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #38124A, #EC4186);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .box {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 24px;
+      border-radius: 20px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(10px);
+      max-width: 400px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1rem;
+      margin: 12px 0;
+    }
+
+    ol {
+      text-align: left;
+      margin: 16px auto;
+      max-width: 300px;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: white;
+      color: #EC4186;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      background: #ffe3ef;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>Camera & Microphone Access Needed</h1>
+    <p>We couldn't access your camera or microphone. Please follow these steps:</p>
+    <ol>
+      <li>Make sure your browser has permission to access the camera and mic.</li>
+      <li>Refresh the page and accept the permission prompt.</li>
+      <li>Use a modern browser (Chrome, Safari, Edge) — avoid in-app browsers.</li>
+      <li>Restart your browser or try a different one.</li>
+    </ol>
+    <a href="/">Try Again</a>
+  </div>
+</body>
+</html>
