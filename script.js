@@ -1,5 +1,5 @@
 // script.js
-const socket = io("https://470958ca-a277-48df-b8b0-b3815357d652-00-2nxyt6ovme0yu.sisko.replit.dev/");
+const socket = io("https://470958ca-a277-48df-b8b0-b3815357d652-00-2nxyt6ovme0yu.sisko.replit.dev");
 
 let localStream;
 let peerConnection;
@@ -111,3 +111,4 @@ fullscreenBtn.addEventListener("click", () => {
     document.exitFullscreen();
   }
 });
+
